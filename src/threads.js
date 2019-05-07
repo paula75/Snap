@@ -2761,7 +2761,7 @@ Process.prototype.reportURL = function (url) {
         if (url.indexOf('//') < 0 || url.indexOf('//') > 8) {
             if (location.protocol === 'file:') {
                 // allow requests from locally loaded sources
-                url = 'https://' + url;
+                url = 'http://' + url;
             } else {
                 url = location.protocol + '//' + url;
             }
